@@ -7,6 +7,10 @@ lsp.ensure_installed({
 	'eslint',
 	'sumneko_lua',
 	'rust_analyzer',
+  'html',
+  'cssls',
+  'tailwindcss',
+  'pylsp',
 })
 
 local cmp = require('cmp')

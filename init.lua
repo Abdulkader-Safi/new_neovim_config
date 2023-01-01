@@ -1,3 +1,3 @@
 require "safi"
 
-print("Hello Master Safi")
+print("Hello Master <Abdulkader Safi/>")

@@ -14,15 +14,15 @@ return require('packer').startup(function(use)
   }
 
   use({ 'rose-pine/neovim', as = 'rose-pine' })
-  
+
   use({
     'dracula/vim',
     as = 'dracula',
-    config = function () 
+    config = function ()
       vim.cmd('colorscheme dracula')
     end
   })
-  
+
   use('nvim-treesitter/nvim-treesitter',{ run = ':TSUpdate' })
 
   use('nvim-treesitter/playground')
@@ -58,9 +58,9 @@ return require('packer').startup(function(use)
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {
-      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+      'nvim-tree/nvim-web-devicons'
     },
-    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+    tag = 'nightly'
   }
 
   use {'glepnir/dashboard-nvim'}
