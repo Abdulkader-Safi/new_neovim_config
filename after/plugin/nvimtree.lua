@@ -18,6 +18,7 @@ require("nvim-tree").setup({
     mappings = {
       list = {
         { key = "u", action = "dir_up" },
+        { key = "i", action = "dir_in" },
       },
     },
   },
@@ -31,4 +32,6 @@ require("nvim-tree").setup({
 
 vim.keymap.set("n", "<leader>b",':NvimTreeToggle<CR>', {noremap = true, silent = true})
 vim.keymap.set("n", "<leader>e",':NvimTreeFocus<CR>', {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>c",':NvimTreeCollapse<CR>', {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>r",':NvimTreeRefresh<CR>', {noremap = true, silent = true})
 
